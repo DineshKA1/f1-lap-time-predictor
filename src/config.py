@@ -1,0 +1,4 @@
+YEAR = 2024
+EVENT = 'Monza'
+SESSION_TYPE = 'Q'
+DRIVER_CODE = 'VER'

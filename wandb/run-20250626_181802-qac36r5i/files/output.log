@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "C:\Users\Dino\Desktop\lap_time_project_MLops\train.py", line 4, in <module>
+    train_model()
+  File "C:\Users\Dino\Desktop\lap_time_project_MLops\src\train_model.py", line 39, in train_model
+    wandb.save(model_path)
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\wandb\sdk\wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\wandb\sdk\wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\wandb\sdk\wandb_run.py", line 436, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\wandb\sdk\wandb_run.py", line 2074, in save
+    return self._save(
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\wandb\sdk\wandb_run.py", line 2133, in _save
+    target_path.symlink_to(source_path)
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\pathlib.py", line 1255, in symlink_to
+    self._accessor.symlink(target, self, target_is_directory)
+OSError: [WinError 1314] A required privilege is not held by the client: 'C:\\Users\\Dino\\Desktop\\lap_time_project_MLops\\models\\model.pkl' -> 'C:\\Users\\Dino\\Desktop\\lap_time_project_MLops\\wandb\\run-20250626_181802-qac36r5i\\files\\models\\model.pkl'
+Traceback (most recent call last):
+  File "C:\Users\Dino\Desktop\lap_time_project_MLops\train.py", line 4, in <module>
+    train_model()
+  File "C:\Users\Dino\Desktop\lap_time_project_MLops\src\train_model.py", line 39, in train_model
+    wandb.save(model_path)
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\wandb\sdk\wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\wandb\sdk\wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\wandb\sdk\wandb_run.py", line 436, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\wandb\sdk\wandb_run.py", line 2074, in save
+    return self._save(
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\wandb\sdk\wandb_run.py", line 2133, in _save
+    target_path.symlink_to(source_path)
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\pathlib.py", line 1255, in symlink_to
+    self._accessor.symlink(target, self, target_is_directory)
+OSError: [WinError 1314] A required privilege is not held by the client: 'C:\\Users\\Dino\\Desktop\\lap_time_project_MLops\\models\\model.pkl' -> 'C:\\Users\\Dino\\Desktop\\lap_time_project_MLops\\wandb\\run-20250626_181802-qac36r5i\\files\\models\\model.pkl'

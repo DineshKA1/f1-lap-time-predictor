@@ -1,0 +1,15 @@
+{"time":"2025-06-27T16:34:16.1319384+08:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"C:\\Users\\Dino\\Desktop\\lap_time_project_MLops\\wandb\\run-20250627_163415-c1q98mp3\\logs\\debug-core.log"}
+{"time":"2025-06-27T16:34:16.6618379+08:00","level":"INFO","msg":"stream: created new stream","id":"c1q98mp3"}
+{"time":"2025-06-27T16:34:16.6618379+08:00","level":"INFO","msg":"stream: started","id":"c1q98mp3"}
+{"time":"2025-06-27T16:34:16.6618379+08:00","level":"INFO","msg":"handler: started","stream_id":"c1q98mp3"}
+{"time":"2025-06-27T16:34:16.6618379+08:00","level":"INFO","msg":"sender: started","stream_id":"c1q98mp3"}
+{"time":"2025-06-27T16:34:16.6618379+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"c1q98mp3"}
+{"time":"2025-06-27T16:34:17.0780684+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-27T16:34:17.5980338+08:00","level":"INFO","msg":"stream: closing","id":"c1q98mp3"}
+{"time":"2025-06-27T16:34:17.5980338+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-27T16:34:17.5980338+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-27T16:34:18.6996822+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-27T16:34:19.0654236+08:00","level":"INFO","msg":"sender: closed","stream_id":"c1q98mp3"}
+{"time":"2025-06-27T16:34:19.0654236+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"c1q98mp3"}
+{"time":"2025-06-27T16:34:19.0654236+08:00","level":"INFO","msg":"handler: closed","stream_id":"c1q98mp3"}
+{"time":"2025-06-27T16:34:19.0654236+08:00","level":"INFO","msg":"stream: closed","id":"c1q98mp3"}

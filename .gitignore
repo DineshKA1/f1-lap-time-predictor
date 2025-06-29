@@ -1,0 +1,17 @@
+# Ignore compiled files
+__pycache__/
+*.pyc
+
+# Ignore FastF1 cache
+cache/
+
+# Ignore model + data files (optional)
+models/
+data/
+
+# Ignore virtual envs
+.venv/
+env/
+
+# Streamlit stuff
+*.streamlit/

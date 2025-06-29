@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "C:\Users\Dino\Desktop\lap_time_project_step3\train.py", line 4, in <module>
+    train_model()
+  File "C:\Users\Dino\Desktop\lap_time_project_step3\src\train_model.py", line 13, in train_model
+    df = pd.read_csv(data_path)
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'data/lap_features.csv'
+Traceback (most recent call last):
+  File "C:\Users\Dino\Desktop\lap_time_project_step3\train.py", line 4, in <module>
+    train_model()
+  File "C:\Users\Dino\Desktop\lap_time_project_step3\src\train_model.py", line 13, in train_model
+    df = pd.read_csv(data_path)
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\Dino\anaconda3\envs\F1-Projects\lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'data/lap_features.csv'
