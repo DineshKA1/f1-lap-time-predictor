@@ -40,7 +40,7 @@ plt.tight_layout()
 plt.savefig('lap_time_predictions_cv.png')
 plt.show()
 
-# Evaluate best model on hold-out test set
+#Evaluate best model on hold-out test set
 y_test_pred = best_model.predict(X_test)
 mae = mean_absolute_error(y_test, y_test_pred)
 print(f"Best MAE on test set: {mae:.2f} seconds")

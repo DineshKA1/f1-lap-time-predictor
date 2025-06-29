@@ -19,7 +19,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 model = RandomForestRegressor(n_estimators=100, random_state=42)
 model.fit(X_train, y_train)
 
-# Save model and feature columns
+#Save model and feature columns
 os.makedirs("models", exist_ok=True)
 joblib.dump(model, "models/model_tuned.pkl")
 joblib.dump(X.columns.tolist(), "models/feature_columns.pkl")

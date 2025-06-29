@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error
 
-# Set Streamlit page config
+#Set Streamlit page config
 st.set_page_config(page_title="F1 Lap Time Predictor", layout="wide")
 
 
@@ -16,7 +16,7 @@ DATA_PATH = "data/lap_features.csv"
 MODEL_PATH = "models/model_tuned.pkl"
 FEATURE_COLS_PATH = "models/feature_columns.pkl"
 
-# Load data and model
+#Load data and model
 @st.cache_data
 def load_data():
     return pd.read_csv(DATA_PATH)
@@ -33,12 +33,12 @@ def load_feature_columns():
         return joblib.load(FEATURE_COLS_PATH)
     return []
 
-# Preprocessing function
+#Preprocessing function
 def preprocess_input(input_row, feature_columns):
     df_input = pd.DataFrame([input_row])
     df_encoded = pd.get_dummies(df_input)
 
-    # Add any missing columns with 0
+    #Add any missing columns with 0
     for col in feature_columns:
         if col not in df_encoded.columns:
             df_encoded[col] = 0
@@ -50,12 +50,12 @@ df = load_data()
 model = load_model()
 feature_columns = load_feature_columns()
 
-# One-hot encode the full dataset
+#One-hot encode the full dataset
 X = pd.get_dummies(df[['AvgThrottle', 'AvgDRS', 'FuelLoad', 'AvgSpeed', 'Driver', 'Team']])
 y = df['LapTime']
 
-# UI: Sidebar Inputs
-st.sidebar.header("📥 Input Lap Features")
+
+st.sidebar.header("Input Lap Features")
 
 avg_throttle = st.sidebar.slider("Average Throttle (%)", 0.0, 100.0, 80.0)
 avg_drs = st.sidebar.slider("Average DRS Activation (%)", 0.0, 100.0, 60.0)
@@ -79,7 +79,7 @@ input_row = {
 
 input_df = preprocess_input(input_row, feature_columns)
 
-st.title("🏎️ F1 Lap Time Predictor + Explainability")
+st.title("🏎️ F1 Lap Time Predictor")
 
 #Hyperparameter UI for retraining
 st.sidebar.subheader("Retrain Hyperparameters")
@@ -111,7 +111,7 @@ if st.button("Retrain Model"):
 
 #Prediction and explanation block
 if model:
-    if st.button("⚡ Predict Lap Time"):
+    if st.button("Predict Lap Time"):
         prediction = model.predict(input_df)[0]
         st.success(f"Predicted Lap Time: **{prediction:.2f} seconds**")
 
@@ -149,7 +149,7 @@ if model:
     with st.expander("Input Data"):
         st.write(input_df)
 
-    #Static CV plot if exists
+    
     if os.path.exists("lap_time_predictions_cv.png"):
         st.image("lap_time_predictions_cv.png", caption="Predicted vs Actual (CV)", use_column_width=True)
 else:
